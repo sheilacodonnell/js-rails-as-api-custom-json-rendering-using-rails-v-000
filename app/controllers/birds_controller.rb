@@ -10,6 +10,7 @@ class BirdsController < ApplicationController
       render json: bird.slice(:id, :name, :species)
     else
       render :json: { message: 'Bird not found'}
+    end
       
   end
 end
